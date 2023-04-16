@@ -11,35 +11,30 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity extends AppCompatActivity {
+public class newRecipe extends AppCompatActivity {
 
-    public BottomNavigationView navigationView;
+    private BottomNavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_new_recipe);
         findViews();
         initNavView();
-
-    }
-
-    private void findViews() {
-        navigationView = findViewById(R.id.bottom_navigation);
     }
 
     private void initNavView() {
-        navigationView.setSelectedItemId(R.id.page_1);
+        navigationView.setSelectedItemId(R.id.page_2);
         navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 switch (id) {
                     case R.id.page_1:
-                        return true;
-                    case R.id.page_2:
                         finish();
-                        startActivity(new Intent(MainActivity.this, newRecipe.class));
+                        startActivity(new Intent(newRecipe.this, MainActivity.class));
+                    case R.id.page_2:
+                        return true;
                 }
                 return true;
             }
@@ -47,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
+    private void findViews() {
+            navigationView = findViewById(R.id.bottom_navigation);
+        }
 }
+
