@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolBar.MyTextAppearance" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/gafata</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/gafata</item>
+        <item name="android:textSize">35dp</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>
