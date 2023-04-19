@@ -42,7 +42,8 @@ public class SplashActivity extends AppCompatActivity {
         splash_BTN_loginSplash = findViewById(R.id.splash_BTN_loginSplash);
         splash_VID_video = findViewById(R.id.splash_VID_video);
 
-        String path = "android.resource://com.example.recipesapp/"+R.raw.splash_video;
+//        String path = "android.resource://com.example.recipesapp/"+R.raw.splash_video;
+        String path = "https://assets9.lottiefiles.com/packages/lf20_0lzv8w7z.json";
         Uri uri = Uri.parse(path);
         splash_VID_video.setVideoURI(uri);
         splash_VID_video.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
