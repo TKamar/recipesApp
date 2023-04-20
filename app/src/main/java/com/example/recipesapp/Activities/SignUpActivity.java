@@ -62,8 +62,6 @@ public class SignUpActivity extends AppCompatActivity {
         sign_up_BTN_sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                // TODO: 28/06/2022 Add validators
                 if (!sign_upf_EDT_first_name.getText().toString().isEmpty() && !sign_upf_EDT_last_name.getText().toString().isEmpty()) {
                     String userID = dataManager.getFirebaseAuth().getCurrentUser().getUid();
                     String userFirstName = sign_upf_EDT_first_name.getText().toString();

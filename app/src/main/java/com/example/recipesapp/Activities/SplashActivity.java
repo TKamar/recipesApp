@@ -5,11 +5,13 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.VideoView;
 import com.example.recipesapp.App;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.recipesapp.Firebase.DataManager;
 import com.example.recipesapp.R;
@@ -19,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SplashActivity extends AppCompatActivity {
 
     VideoView splash_VID_video;
+//    AppCompatButton splash_BTN_loginSplash;
     MaterialButton splash_BTN_loginSplash;
 
 
@@ -30,6 +33,8 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
         setContentView(R.layout.activity_splash);
+        LayoutInflater inflter = (LayoutInflater.from(this));
+
 
         if(FirebaseAuth.getInstance().getCurrentUser() != null){
             DataManager.getInstance().currentUserChangeListener();
@@ -42,8 +47,8 @@ public class SplashActivity extends AppCompatActivity {
         splash_BTN_loginSplash = findViewById(R.id.splash_BTN_loginSplash);
         splash_VID_video = findViewById(R.id.splash_VID_video);
 
-//        String path = "android.resource://com.example.recipesapp/"+R.raw.splash_video;
-        String path = "https://assets9.lottiefiles.com/packages/lf20_0lzv8w7z.json";
+        String path = "android.resource://com.example.recipesapp/"+R.raw.splash_video;
+//        String path = "https://assets9.lottiefiles.com/packages/lf20_0lzv8w7z.json";
         Uri uri = Uri.parse(path);
         splash_VID_video.setVideoURI(uri);
         splash_VID_video.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {

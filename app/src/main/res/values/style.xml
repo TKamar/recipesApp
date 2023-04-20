@@ -15,4 +15,9 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
+<!--    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Add attributes here &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/itimalia_pink_califoria</item>-->
+<!--    </style>-->
+
 </resources>
