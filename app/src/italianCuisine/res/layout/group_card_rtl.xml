@@ -1,0 +1,68 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:backgroundTint="@color/light_pink"
+    android:elevation="6dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="14dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp">
+
+        <!--  Contact Name  -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/group_TXV_group_name_rtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/gafata"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:minLines="2"
+            android:text="Group Name"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!--  Contact Name  -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/group_TXV_subtitle_description_rtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_TXV_group_name_rtl"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/gafata"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:minLines="2"
+            android:text="Group description"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/group_IMG_img_rtl"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:elevation="3dp"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/specific_rounded_corner"
+            app:srcCompat="@drawable/img_profile"
+            app:strokeColor="#DC9A8D"
+            app:strokeWidth="2.5dp" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

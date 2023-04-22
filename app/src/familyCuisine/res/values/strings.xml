@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Family Cuisine Craft</string>
+    <string name="package_sufix">.family</string>
+    <string name="verification">Verification</string>
+    <string name="we_will_send_you_an_one_time_code_on_this_mobile_number">We will send you an one time code on this mobile number</string>
+    <string name="_972">+972</string>
+    <string name="didn_t_receive_the_code">Didn\'t receive the code ?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="IL_num">+972</string>
+    <string name="LBL_verification_Id">verificationId</string>
+    <string name="LBL_phone">phone</string>
+    <string name="get_started">Get Started</string>
+</resources>

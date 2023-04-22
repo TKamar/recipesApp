@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_list_FRM_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/my_off_white"
+    tools:context=".Fragments.GroupListFragment">
+
+    <RelativeLayout
+        android:id="@+id/group_list_LAY_linear_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:fontFamily="@font/gafata"
+            android:text="Groups"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="25dp"/>
+
+        <RelativeLayout
+            android:id="@+id/sign_up_RLY_cont_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="155dp"
+            android:background="@drawable/background_creat_group">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_RECYC_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:clipToPadding="false"
+                android:paddingBottom="60dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

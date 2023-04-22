@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="8dp"-->
+<!--        >-->
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="110dp"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:elevation="8dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            app:cardCornerRadius="15dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/my_off_white"-->
+<!--                android:padding="10dp"-->
+<!--                >-->
+
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    android:id="@+id/group_TXV_group_name_rtl"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="@font/gafata"-->
+<!--                    android:text="Group Name"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    android:id="@+id/group_TXV_subtitle_description_rtl"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/group_TXV_group_name_rtl"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:fontFamily="@font/gafata"-->
+<!--                    android:text=" -&#45;&#45;Description&#45;&#45;&#45;&#45;"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--            </RelativeLayout>-->
+<!--        </com.google.android.material.card.MaterialCardView>-->
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/group_IMG_rounded_corner_background_ltr"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:shapeAppearanceOverlay="@style/specific_rounded_corner"-->
+<!--            app:srcCompat="@color/white"-->
+<!--            android:elevation="8dp"-->
+<!--            android:layout_alignEnd="@id/card"-->
+<!--            android:layout_marginEnd="9dp"-->
+<!--            android:layout_marginTop="9dp"-->
+<!--            />-->
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/group_IMG_img_ltr"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:shapeAppearanceOverlay="@style/specific_rounded_corner"-->
+<!--            app:srcCompat="@drawable/not_sign_up_bar_photo"-->
+<!--            android:elevation="8dp"-->
+<!--            android:layout_alignEnd="@id/card"-->
+<!--            android:layout_marginEnd="18dp"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            />-->
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="8dp"-->
+<!--        >-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="110dp"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:elevation="8dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            app:cardCornerRadius="15dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/my_off_white"-->
+<!--                android:padding="10dp"            >-->
+
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    android:id="@+id/group_TXV_group_name_list"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:fontFamily="@font/gafata"-->
+<!--                    android:gravity="end"-->
+<!--                    android:text="Group Name"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:maxWidth="180dp"/>-->
+
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    android:id="@+id/group_TXV_subtitle_description_list"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/group_TXV_group_name_list"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:fontFamily="@font/gafata"-->
+<!--                    android:gravity="end"-->
+<!--                    android:maxWidth="180dp"-->
+<!--                    android:text="-&#45;&#45;Description&#45;&#45;&#45;&#45;"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+
+<!--            </RelativeLayout>-->
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/group_IMG_rounded_corner_background_rtl"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:shapeAppearanceOverlay="@style/specific_rounded_corner"-->
+<!--            app:srcCompat="@color/white"-->
+<!--            android:elevation="8dp"-->
+<!--            android:layout_alignStart="@id/card1"-->
+<!--            android:layout_marginStart="9dp"-->
+<!--            android:layout_marginTop="9dp"-->
+<!--            />-->
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/group_IMG_img_rtl"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:shapeAppearanceOverlay="@style/specific_rounded_corner"-->
+<!--            app:srcCompat="@drawable/not_sign_up_bar_photo"-->
+<!--            android:elevation="8dp"-->
+<!--            android:layout_alignStart="@id/card1"-->
+<!--            android:layout_marginStart="18dp"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

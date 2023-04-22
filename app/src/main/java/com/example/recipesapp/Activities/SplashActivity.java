@@ -51,10 +51,10 @@ public class SplashActivity extends AppCompatActivity {
         String packName = this.getResources().getString(R.string.package_sufix);
         switch (packName){
             case ".family":
-                path = "android.resource://com.example.recipesapp.family/" + R.raw.splash_video;
+                path = "android.resource://com.example.recipesapp.family/" + R.raw.splash_video_family;
                 break;
             case ".italian":
-                path = "android.resource://com.example.recipesapp.italian/" + R.raw.splash_video;
+                path = "android.resource://com.example.recipesapp.italian/" + R.raw.splash_video_italian;
                 break;
             default:
                 path = "android.resource://com.example.recipesapp/" + R.raw.splash_video;

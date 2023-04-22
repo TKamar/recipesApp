@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_background_recipe"
+    tools:context=".Activities.RecipeActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recipe_view_IMG_dish"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="-60dp"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/half_rounded_corner"
+        app:srcCompat="@drawable/img_dish" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/back_BTN"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="25dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_back" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipe_view_IMG_dish"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-36dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/res_IMG_nut1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_organic_food"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/res_IMG_nut2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_carbohydrates"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/res_IMG_nut3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_no_peanut"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/res_IMG_nut4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_dairy"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/res_IMG_nut5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_no_eggs"
+                android:visibility="gone" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--  Recipe Name  -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recipe_view_LBL_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/gafata"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="Recipe name"
+            android:textColor="#30275c"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!--  Recipe Description (sub title)  -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recipe_view_LBL_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/gafata"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="Sub Title"
+            android:textColor="#30275c"
+            android:textSize="18sp" />
+
+        <!--        Divaider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/dark_parpel" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <!--  Ingredients (sub title)  -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/recipe_view_TXV_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gafata"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="Ingredients"
+                    android:textColor="#30275c"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/ingredients_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/gafata"
+                    android:textColor="@color/dark_parpel"
+                    android:textSize="18sp" />
+
+                <!--        Divaider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/dark_parpel" />
+
+                <!--  How to do (sub title)  -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/how_to_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/gafata"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="How to do?"
+                    android:textColor="#30275c"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/how_to_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/gafata"
+                    android:textColor="@color/dark_parpel"
+                    android:textSize="18sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

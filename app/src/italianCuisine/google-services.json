@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "1051841971515",
+    "firebase_url": "https://cuisine-craft-default-rtdb.firebaseio.com",
+    "project_id": "cuisine-craft",
+    "storage_bucket": "cuisine-craft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051841971515:android:6a7c16a4294b94c603a31e",
+        "android_client_info": {
+          "package_name": "com.example.recipesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051841971515-tsuqvae6flfom2n34ojafpqjdqvsneqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recipesapp",
+            "certificate_hash": "0ebb91cc46b2efa5fcdfc98547b118450fdcbf13"
+          }
+        },
+        {
+          "client_id": "1051841971515-jfun8pf427erob27um8pscn5tq0i4kll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABaQJL7yMHXT7Hz8h9rdLCDDfjh4LIFAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051841971515-jfun8pf427erob27um8pscn5tq0i4kll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051841971515:android:b8cd9843d2447b1603a31e",
+        "android_client_info": {
+          "package_name": "com.example.recipesapp.italian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051841971515-jfun8pf427erob27um8pscn5tq0i4kll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABaQJL7yMHXT7Hz8h9rdLCDDfjh4LIFAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051841971515-jfun8pf427erob27um8pscn5tq0i4kll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
