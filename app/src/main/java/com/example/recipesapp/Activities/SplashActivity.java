@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
@@ -46,8 +47,24 @@ public class SplashActivity extends AppCompatActivity {
 
         splash_BTN_loginSplash = findViewById(R.id.splash_BTN_loginSplash);
         splash_VID_video = findViewById(R.id.splash_VID_video);
-
-        String path = "android.resource://com.example.recipesapp/"+R.raw.splash_video;
+        String path = "";
+        String packName = this.getResources().getString(R.string.package_sufix);
+        switch (packName){
+            case ".family":
+                path = "android.resource://com.example.recipesapp.family/" + R.raw.splash_video;
+                break;
+            case ".italian":
+                path = "android.resource://com.example.recipesapp.italian/" + R.raw.splash_video;
+                break;
+            default:
+                path = "android.resource://com.example.recipesapp/" + R.raw.splash_video;
+                break;
+        }
+//        Log.d("path_video", "path: " + path);
+//        Log.d("path_video", "packName: " + packName);
+//        Log.d("path_video", "path: " + path);
+//        Log.d("path_video", "R.string.package_sufix: " + R.string.package_sufix);
+//        Log.d("path_video", "R.raw.splash_video: " + R.raw.splash_video);
 //        String path = "https://assets9.lottiefiles.com/packages/lf20_0lzv8w7z.json";
         Uri uri = Uri.parse(path);
         splash_VID_video.setVideoURI(uri);

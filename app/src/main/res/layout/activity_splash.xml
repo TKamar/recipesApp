@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/background_button"
-        android:text="Get Start"
+        android:text="@string/get_started"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:fontFamily="@font/gafata"

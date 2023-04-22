@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'com.example.recipesapp'
     compileSdk 33
+    flavorDimensions "versionCode"
 
     defaultConfig {
         applicationId "com.example.recipesapp"
@@ -16,6 +17,22 @@ android {
         compileSdkPreview = "UpsideDownCake"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    flavorDimensions 'default'
+    productFlavors{
+        italianCuisine{
+            dimension 'default'
+            applicationIdSuffix '.italian'
+            resValue "string", "app_name", "Italian Cuisine Craft"
+            manifestPlaceholders = [appIcon: "@drawable/italian_ic_launcher"]
+        }
+        familyCuisine{
+            dimension 'default'
+            applicationIdSuffix '.family'
+            resValue "string", "app_name", "Family Cuisine Craft"
+            manifestPlaceholders = [appIcon: "@drawable/family_ic_launcher"]
+        }
     }
 
     buildTypes {
