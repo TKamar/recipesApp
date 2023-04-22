@@ -14,8 +14,8 @@ Edit the profile.</br>
 In the future, there will be a chat mode for group members.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/62396197/229291903-7d509b39-72ea-4e36-a570-5f580208943e.png" width="250">
-  <img src="https://user-images.githubusercontent.com/62396197/229291909-452ccb58-935d-42de-849f-bfa888ae0bd5.png" width="250">
+  <img src="https://github.com/TKamar/recipesApp/blob/master/app/src/main/res/raw/Screenshot_1.jpg?raw=true" width="250">
+  <img src="https://github.com/TKamar/recipesApp/blob/master/app/src/main/res/raw/Screenshot_2.jpg?raw=true" width="250">
 </p>
 
 ## SharedPrefManager Library
